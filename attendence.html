@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - GBDC Sehwan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+
+
+        .content {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input,
+        form select,
+        form button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #77cd6f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #5aa95b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="img/logo.clg.2.png" alt="College Logo">
+            <h1>GBDC Sehwan</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="attendence.html" class="active">Attendance</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Attendance</h2>
+        <p>Check your attendance record here:</p>
+        <form>
+            <input type="number" name="rollNumber" placeholder="Enter your Roll Number" required>
+            <select name="Class" required>
+                <option value="" disabled selected>Select Your Class</option>
+                <option value="firstyearmed">XI P..M.</option>
+                <option value="firstyeareng">XI P.E.</option>
+                <option value="secondyearmed">XII P.M.</option>
+                <option value="secondyeareng">XII P.E.</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        © 2024 GBDC Sehwan. All Rights Reserved. <a href="index.html">Return to Home</a>
+    </footer>
+</body>
+
+</html>
